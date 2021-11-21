@@ -36,7 +36,7 @@ class POST {
             scope.launch(Dispatchers.IO){
                 var user = JSONObject()
                 user.put("id",6)
-                user.put("firstName","GOD")
+                user.put("firstName","GD")
                 user.put("middleName","GOD")
                 user.put("lastName","GOD")
                 user.put("description","PROSTO UCHU ATO ZA DEN' DO CHEMPIONATA")
@@ -54,7 +54,7 @@ class POST {
                     val error = responseCode
                     val message = responseMessage
                     scope.launch(Dispatchers.Main){
-                        Toast.makeText(context, "$error ", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "$error", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
