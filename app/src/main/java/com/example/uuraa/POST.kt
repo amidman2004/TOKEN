@@ -50,10 +50,11 @@ class POST {
                     writer.flush()
                     outputStream.flush()
                     connect()
+
                     val error = responseCode
                     val message = responseMessage
                     scope.launch(Dispatchers.Main){
-                        Toast.makeText(context, "$error $message", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "$error ", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
